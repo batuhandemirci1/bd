@@ -20,9 +20,16 @@
             let contactCity = document.getElementById("city").value;
             let contactTelephone = document.getElementById("telephone").value;
 
+            if(contactName = ""){
+
+                alert("Contact information cannot be empty. Aborted.");
+                
+            }
+            else{
             document.getElementById("showInfo").innerHTML = "Name = " + contactName + "<br>"+"Country =  " + contactCountry+ " " + "<br>" + "Surname = " + contactSurname + "<br>" + "City = " + contactCity + "<br>" + "Age = " + contactAge + "<br>" + "Telephone = +" + contactTelephone;
             console.log(contactName,contactSurname,contactAge,contactCountry,contactCity,contactTelephone);
             alert("Successfully saved! Contact call may take 5 days. Have a nice day.");
+            }
          }
     </script>
 </head>
